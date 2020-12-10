@@ -1,6 +1,6 @@
-import React, {Components} from 'react'
+import React, {Component} from 'react'
 
-export default class Input extends Components {
+export default class Input extends Component {
     constructor(props) {
         super(props)
         this.state = {

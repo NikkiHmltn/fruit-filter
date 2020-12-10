@@ -1,6 +1,6 @@
-import React, {Components} from 'react'
+import React, {Component} from 'react'
 
-export default class List extends Components {
+export default class List extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -9,7 +9,7 @@ export default class List extends Components {
     }
     render() {
         const fruitItems = this.props.fruits.map((eachFruit, idx) => {
-            return <li>{eachFruit}</li>
+            return <li key={idx}>{eachFruit}</li>
         })
 
         return(

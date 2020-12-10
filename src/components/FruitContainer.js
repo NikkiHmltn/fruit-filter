@@ -1,13 +1,13 @@
-import React, {Components} from 'react'
+import React, {Component} from 'react'
 import List from './List'
 import Input from './Input'
 
-export default class FruitContainer extends Components {
+export default class FruitContainer extends Component {
     constructor(props) {
         super(props)
         this.state = {
             //initialize the fruit listto the full list passed into props
-            fruitsToDisplay: this.props.fruits,
+            fruitsToDisplay: props.fruits,
             //initialize the filter value to empty string
             filterValue: " ", 
         }
@@ -25,6 +25,10 @@ export default class FruitContainer extends Components {
     }
 
     render() {
+        console.log('---- state ----');
+        console.log(this.state.fruitsToDisplay);
+        console.log('---- props ----');
+        console.log(this.props.fruits);
         //here is here you can do console.log
         // inside of Input Components, to access props, I will say props.value
         // inside of List Components, to access props, I will say props.fruits
