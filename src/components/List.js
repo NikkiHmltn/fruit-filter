@@ -8,10 +8,14 @@ export default class List extends Components {
         }
     }
     render() {
+        const fruitItems = this.props.fruits.map((eachFruit, idx) => {
+            return <li>{eachFruit}</li>
+        })
+
         return(
             <div>
                 <ul>
-                    {/* list goes here */}
+                    {fruitItems}
                 </ul>
             </div>
         )
