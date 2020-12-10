@@ -10,7 +10,9 @@ export default class List extends Components {
     render() {
         return(
             <div>
-                <h1>List</h1>
+                <ul>
+                    {/* list goes here */}
+                </ul>
             </div>
         )
     }
